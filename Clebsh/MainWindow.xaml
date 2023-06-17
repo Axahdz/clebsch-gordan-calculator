@@ -1,0 +1,58 @@
+﻿<Window x:Class="MiAplicacionWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mi Aplicación WPF" Height="500" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <StackPanel Margin="20">
+                <TextBlock Text="Inserte momento j1" FontSize="16" FontWeight="Bold" Margin="0 0 0 10"/>
+                <TextBox x:Name="j1TextBox" Width="200" Margin="0 0 0 20"/>
+
+                <TextBlock Text="Inserte momento j2" FontSize="16" FontWeight="Bold" Margin="0 0 0 10"/>
+                <TextBox x:Name="j2TextBox" Width="200" Margin="0 0 0 20"/>
+
+                <Button Content="Aceptar" Width="100" HorizontalAlignment="Center" Click="Aceptar_Click" Margin="0 20 0 0"/>
+
+                <TextBlock x:Name="resultadoTextBlock" FontSize="16" FontWeight="Bold" Margin="0 20 0 0"/>
+
+                <TextBlock Text="Seleccione un valor de j" FontSize="16" FontWeight="Bold" Margin="0 20 0 10"/>
+                <ComboBox x:Name="jComboBox" Width="200" Margin="0 0 0 20" SelectionChanged="jComboBox_SelectionChanged"/>
+
+                <TextBlock Text="Seleccione un valor de m" FontSize="16" FontWeight="Bold" Margin="0 0 0 10"/>
+                <ComboBox x:Name="mComboBox" Width="200" Margin="0 0 0 20" SelectionChanged="mComboBox_SelectionChanged"/>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <Grid Grid.Column="1" Margin="20">
+            <TextBlock Text="Coeficientes de Clebsh Gordan:" FontWeight="Bold" Margin="0 0 0 10"/>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Column="0" BorderBrush="#CCCCCC" BorderThickness="1">
+                        <TextBlock x:Name="selectedValuesTextBlock" TextWrapping="Wrap" Width="Auto" Height="Auto"/>
+                    </Border>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+
+        <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 20 20">
+            <Button Content="J_+" Width="100" Click="JPlusButton_Click" Margin="0 0 10 0"/>
+            <Button Content="J_-" Width="100" Click="JMinusButton_Click" Margin="0 0 10 0"/>
+        </StackPanel>
+
+        <Button Grid.Column="0" Content="Limpiar" Width="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20 0 0 20" Click="Limpiar_Click"/>
+    
+    
+    </Grid>
+    
+    
+</Window>
