@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
@@ -15,7 +15,7 @@ namespace MiAplicacionWPF
             InitializeComponent();
         }
 
-       
+
         private void Aceptar_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -267,3 +267,4 @@ namespace MiAplicacionWPF
 
     }
 }
+
