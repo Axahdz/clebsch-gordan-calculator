@@ -27,9 +27,14 @@ This tool was designed to support quantum mechanics calculations, particularly i
 1. Open the project in Visual Studio
 2. Build and run the application
 
+## Interface Preview
+
+### Input and Results
+<img width="820" height="504" alt="image" src="https://github.com/user-attachments/assets/f0894d39-43d0-412a-b5be-86ebab749579" />
+
+
+
 ## Author
 
 Javier Axayácatl Melchor Hernández
-
-<img width="820" height="504" alt="image" src="https://github.com/user-attachments/assets/f0894d39-43d0-412a-b5be-86ebab749579" />
 
