@@ -28,6 +28,7 @@ This tool was designed to support quantum mechanics calculations, particularly i
 2. Build and run the application
 
 ## Interface Preview
+The following image shows the graphical interface of the application, including user inputs and computed Clebsch-Gordan coefficients.
 
 ### Input and Results
 <img width="820" height="504" alt="image" src="https://github.com/user-attachments/assets/f0894d39-43d0-412a-b5be-86ebab749579" />
