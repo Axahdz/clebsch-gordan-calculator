@@ -30,3 +30,6 @@ This tool was designed to support quantum mechanics calculations, particularly i
 ## Author
 
 Javier Axayácatl Melchor Hernández
+
+<img width="820" height="504" alt="image" src="https://github.com/user-attachments/assets/f0894d39-43d0-412a-b5be-86ebab749579" />
+
